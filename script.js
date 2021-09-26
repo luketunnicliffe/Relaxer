@@ -3,7 +3,7 @@ const text = document.getElementById('text');
 
 
 const totalTime = 7500;
-const breathTime  = (totalTime/5*2)
+const breathTime  = ((totalTime/5)*2)
 const holdTime = totalTime / 5;
 
 function breathAnimation() {

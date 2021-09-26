@@ -3,16 +3,16 @@ const text = document.getElementById('text');
 
 
 const totalTime = 7500;
-const breathTime  = ((totalTime/5)*2)
+const breathTime  = (totalTime/5*2)
 const holdTime = totalTime / 5;
 
 function breathAnimation() {
-    text.innerText = 'Breathe in!';
+    text.innerText = 'Breathe in - puraka!';
     container.className = 'container grow';
     setTimeout(() => {
-        text.innerText = 'Hold!';
+        text.innerText = 'Kumbhaka!';
         setTimeout(() => {
-            text.innerText = 'Breathe out!';
+            text.innerText = 'Breathe out - rechaka!';
             container.className = 'container shrink';
         }, holdTime)
     }, breathTime);
